@@ -1,0 +1,43 @@
+{
+  "optimizer": {
+    "params": {
+      "lr": 0.005
+    },
+    "name": "Adam"
+  },
+  "nbins": 15,
+  "dataset": {
+    "shuffle": true,
+    "root": "data",
+    "num_workers": 1,
+    "name": "probs_densenet40_c10_logits.p",
+    "batch_size": 5000
+  },
+  "loss": {
+    "name": "hcalib",
+    "params": {
+      "epsilon": 1e-20,
+      "veclen": 200,
+      "IsIter": true,
+      "lossweight": 100000.0
+    }
+  },
+  "calibrate": {
+    "save_summary_steps": 1,
+    "num_epochs": 2000,
+    "early_stopping": {
+      "patience": 160
+    },
+    "scheduler": {
+      "lr_reduce_patience": 20
+    }
+  },
+  "seed": 1357,
+  "model": {
+    "name": "pwlinear",
+    "params": {
+      "segment": 500
+    }
+  },
+  "verbose": true
+}
