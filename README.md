@@ -260,6 +260,7 @@ skce(predictions, outcomes)
 If you use this code repository in your research, teaching, or other activities, please cite the following paper:
 
 ```
-Huang W, Cao G, Xia J, Chen J, Wang H, Zhang J. h-calibration: Rethinking Classifier Recalibration with
-Probabilistic Error-Bounded Objective[J]. IEEE Trans. Pattern Anal. Mach. Intell. (TPAMI), 2025.
+Huang W, Cao G, Xia J, Chen J, Wang H, Zhang J. h-calibration: Rethinking Classifier
+Recalibration with Probabilistic Error-Bounded Objective[J]. IEEE Trans. Pattern Anal.
+Mach. Intell. (TPAMI), 2025.
 ```
