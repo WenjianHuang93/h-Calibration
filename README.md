@@ -76,7 +76,7 @@ project/
 ├── Demo.py                   # a demo for training and evaluating calibrator
 │
 ├── cli/
-│   └── run.py                # script running all reported experiments
+│   └── run.sh                # script running all reported experiments
 │
 ├── README.md                 # project description
 └── requirements.txt          # python dependencies
